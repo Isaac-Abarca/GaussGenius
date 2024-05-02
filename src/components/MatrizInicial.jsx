@@ -9,6 +9,7 @@ const MatrizInicial = ({ matrix, handleChangeCell }) => {
         // Realizar eliminación gaussiana
         const soluciones = eliminarGaussiana(matrix);
         console.log(soluciones)
+        alert('Las soluciones son ' + soluciones)
         //setSolution(soluciones);
     }
 

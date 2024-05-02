@@ -12,7 +12,7 @@ const GausJordan = () => {
     const [errorDialogOpen, setErrorDialogOpen] = useState(false);
     //const [gaussianEliminationSteps, setGaussianEliminationSteps] = useState([]);
 
-    
+
 
     const handleBtn = () => {
         if (isNaN(columns) || isNaN(rows)) {
@@ -29,7 +29,7 @@ const GausJordan = () => {
             }
             setMatrix(newMatrix);
 
-           
+
         }
     };
 
@@ -49,13 +49,13 @@ const GausJordan = () => {
             {matrix.length > 0 && (
                 <div>
                     <h2>Matriz Inicial</h2>
-                    <MatrizInicial matrix={matrix} handleChangeCell={handleChangeCell}  />
+                    <MatrizInicial matrix={matrix} handleChangeCell={handleChangeCell} />
                 </div>
             )}
             <MessageModal errorDialogOpen={errorDialogOpen} handleCloseErrorDialog={handleCloseErrorDialog} />
             {//<PasosEliminacionGauseana gaussianEliminationSteps={gaussianEliminationSteps} />
-}
-</div>
+            }
+        </div>
 
     );
 };

@@ -27,6 +27,7 @@ const InsertarMatrix = ({columns, rows, setColumns, setRows, handleBtn}) => {
                     />
                 </div>
                 <div className='input'>
+                    <p className='eliminar'>p</p>
                     <Button onClick={handleBtn} colorScheme='linkedin'>
                         Cargar Matriz
                     </Button>

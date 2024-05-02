@@ -1,13 +1,16 @@
 import './App.css'
-import NavBar from './components/NavBar'
-import GausJordan from './components/GausJordan'
+import Home from './components/Home'
+//import NavBar from './components/NavBar'
+//import GausJordan from './components/GausJordan'
 
 function App() {
 
   return (
     <>
-      <NavBar/>
-      <GausJordan></GausJordan>
+      
+      <Home/>
+      {//<GausJordan></GausJordan> <NavBar/>
+      }
     </>
   )
 }

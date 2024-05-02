@@ -10,7 +10,7 @@ function derivative_f(x) {
 }
 
 // Ejemplo de uso:
-const x = 1.67589848090895; // Valor de x para evaluar las funciones
+const x = 1; // Valor de x para evaluar las funciones
 
 // Evaluación de la función f(x) en x
 const result_f = f(x);

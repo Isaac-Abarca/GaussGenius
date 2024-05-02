@@ -18,7 +18,7 @@ const Home = () => {
                         <GausJordan />
                     </TabPanel>
                     <TabPanel>
-                        <p>two!</p>
+                        <p>Jacobí</p>
                     </TabPanel>
                 </TabPanels>
             </Tabs>

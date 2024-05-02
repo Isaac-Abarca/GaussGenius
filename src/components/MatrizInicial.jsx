@@ -23,7 +23,7 @@ const MatrizInicial = ({ matrix, handleChangeCell }) => {
                                 <td key={j}>
                                     <Input
                                         htmlSize={2}
-                                        width='auto'
+                                        width='10rem'
                                         value={cell}
                                         onChange={(e) => handleChangeCell(i, j, e.target.value)}
                                         type="number"

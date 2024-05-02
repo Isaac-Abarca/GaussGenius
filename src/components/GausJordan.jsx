@@ -10,7 +10,7 @@ const GausJordan = () => {
     const [rows, setRows] = useState('');
     const [matrix, setMatrix] = useState([]);
     const [errorDialogOpen, setErrorDialogOpen] = useState(false);
-    //const [gaussianEliminationSteps, setGaussianEliminationSteps] = useState([]);
+    
 
 
 

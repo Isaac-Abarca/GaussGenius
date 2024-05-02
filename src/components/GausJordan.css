@@ -1,0 +1,35 @@
+.container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    padding: 2rem;
+}
+
+.title h1{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.inputs{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.input p{
+    font-weight: 500;
+}

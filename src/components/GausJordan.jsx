@@ -15,7 +15,7 @@ const GausJordan = () => {
 
 
     const handleBtn = () => {
-        if (isNaN(columns) || isNaN(rows)) {
+        if (columns !== rows) {
             setErrorDialogOpen(true);
         } else {
             // Generar la matriz con las dimensiones dadas

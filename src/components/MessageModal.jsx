@@ -1,7 +1,7 @@
 import { Button, AlertDialog, AlertDialogBody, AlertDialogFooter, AlertDialogHeader, AlertDialogContent, AlertDialogOverlay } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
-const MessageModal = ({ errorDialogOpen, handleCloseErrorDialog }) => {
+const MessageModal = ({ errorDialogOpen, handleCloseErrorDialog  }) => {
     return (
         <AlertDialog isOpen={errorDialogOpen} onClose={handleCloseErrorDialog}>
             <AlertDialogOverlay>

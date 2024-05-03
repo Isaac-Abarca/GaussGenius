@@ -1,6 +1,7 @@
 import { Input, Button } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
+// eslint-disable-next-line react/prop-types
 const InsertarMatrix = ({ columns, rows, setColumns, setRows, handleBtn }) => {
     return (
         <div className='container__inputs'>
@@ -39,8 +40,6 @@ const InsertarMatrix = ({ columns, rows, setColumns, setRows, handleBtn }) => {
 }
 
 InsertarMatrix.propTypes = {
-    columns: PropTypes.number.isRequired,
-    rows: PropTypes.number.isRequired,
     setColumns: PropTypes.func.isRequired,
     setRows: PropTypes.func.isRequired,
     handleBtn: PropTypes.func.isRequired

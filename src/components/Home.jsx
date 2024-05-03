@@ -1,5 +1,6 @@
 import { Tabs, TabList, Tab, TabPanels, TabPanel } from '@chakra-ui/react';
 import GausJordan from './GausJordan';
+import Jacobi from './Jacobi'
 
 const Home = () => {
     return (
@@ -7,7 +8,6 @@ const Home = () => {
             <Tabs isFitted variant='enclosed' >
                 <TabList 
                     mb='1em' 
-                    
                     bgClip="text"
                 >
                     <Tab color="blue.700"  fontWeight="extrabold" fontSize="4xl">GausJordan</Tab>
@@ -18,7 +18,7 @@ const Home = () => {
                         <GausJordan />
                     </TabPanel>
                     <TabPanel>
-                        <p>Jacobí</p>
+                        <Jacobi/>
                     </TabPanel>
                 </TabPanels>
             </Tabs>

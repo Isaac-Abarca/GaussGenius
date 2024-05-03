@@ -1,4 +1,4 @@
-function jacobi(A, b, tol, maxIter) {
+function jacobi(A, b, err=0.0001, maxIter) {
     const n = b.length;
     let x = new Array(n).fill(0); // Inicializamos x con ceros
     let xPrev;
@@ -23,7 +23,7 @@ function jacobi(A, b, tol, maxIter) {
             error = Math.max(error, Math.abs((x[i] - xPrev[i]) / x[i]));
         }
 
-        if (error < tol) {
+        if (error < err) {
             console.log(`Convergió en ${iter + 1} iteraciones.`);
             return x;
         }
@@ -35,6 +35,8 @@ function jacobi(A, b, tol, maxIter) {
     return x;
 }
 
+export default jacobi
+
 // Ejemplo de uso
 const A = [
     [0.13, -1.14, -9.93],
@@ -42,8 +44,8 @@ const A = [
     [-9.71, 82.4, 0.75]
 ];
 const b = [-31.94, 7.1, 157.34];
-const tol = 0.0001; // Tolerancia para la convergencia
+const err = 0.0001; // Tolerancia para la convergencia
 const maxIter = 7; // Número máximo de iteraciones
 
-const solution = jacobi(A, b, tol, maxIter);
+const solution = jacobi(A, b, err, maxIter);
 console.log("Solución:", solution); 

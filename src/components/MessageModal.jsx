@@ -7,7 +7,7 @@ const MessageModal = ({ errorDialogOpen, handleCloseErrorDialog  }) => {
             <AlertDialogOverlay>
                 <AlertDialogContent>
                     <AlertDialogHeader>Error</AlertDialogHeader>
-                    <AlertDialogBody>Solo se permiten números en las columnas y filas.</AlertDialogBody>
+                    <AlertDialogBody>Solo se permiten matrices cuadradas</AlertDialogBody>
                     <AlertDialogFooter>
                         <Button colorScheme="linkedin" onClick={handleCloseErrorDialog}>
                             Entendido
